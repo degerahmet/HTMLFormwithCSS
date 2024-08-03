@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Ahmet Deger" />
+  <title>HTML Form</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class='main__container'>
+
+    <div class='form__container'>
+
+      <form action="results.html" method="GET">
+
+        <h1>Registration</h1>
+        <div class="registration_container">
+
+          <input type="email" name="Email" id="email" placeholder="Email" required>
+          <input type="text" name="Username" id="username" placeholder="Username" required>
+          <input type="text" name="First Name" id="fname" placeholder="First Name" required>
+          <input type="password" name="Password" id="password" placeholder="Password" required>
+          <input type="tel" name="Phone Number" id="phoneNumber" placeholder="Phone Number" required">
+        </div>
+
+
+        <input type="date" name="Date" id="date" required>
+
+        <div id="fav_season">
+
+          <div>
+            Favorite Season:
+          </div>
+          <div>
+            <label>
+              Winter
+              <input type="checkbox" name="Winter" id="Winter">
+            </label>
+          </div>
+          <div>
+            <label>
+              Summer
+              <input type="checkbox" name="Summer" id="Summer">
+            </label>
+          </div>
+        </div>
+
+        <div id="fav_time">
+          <div>
+            Do you prefer Nighttime or Daytime
+          </div>
+          <div>
+            <label>
+              Night
+              <input type="radio" name="Night" id="night" value="Night">
+            </label>
+            <label>
+              Day
+              <input type="radio" name="Day" id="day" value="Day">
+            </label>
+          </div>
+        </div>
+
+
+        <div id="fav_weekday">
+          <label for="faveDay">Favorite Weekday</label>
+          <select name="Favorite Day" id="faveDay" multiple>
+            <option value="Monday">Monday</option>
+            <option label="Tuesday" value="Tuesday"></option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+        </div>
+
+        <div>
+          <textarea name="Opinion" id="opinion">Tell us what you think</textarea>
+        </div>
+
+
+        <input type="url" name="Web Url" id="webUrl" placeholder="Website URL">
+
+
+        <div>
+          <label for="favecolor">Favorite Color</label>
+          <input type="color" name="Favorite Color" id="favecolor">
+        </div>
+
+        <input type="hidden" name="Session ID" id="sessionId" value="secretRandomNumberUsedtoManageTheSession">
+
+        <input type="file" name="Uploaded File" id="fileUpload">
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+
+    </div>
+
+  </div>
+</body>
+
+</html>
